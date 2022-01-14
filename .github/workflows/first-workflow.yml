@@ -1,4 +1,25 @@
 name: Deployment
 on:
   push: 
-       branches:[ master ]
+       branches: [ master ]
+       
+jobs:
+ job_one:
+  name: Den
+  runs-on: ubuntu-latest
+  steps:
+  - name: server
+    uses: appleboy/ssh-action@master
+    with:
+       host: 	ftpupload.net
+       username: epiz_30815428
+       key: ${{ 79WS4MP3CXj26 }}
+       port: 21
+       script: |
+         cd website
+         git pull origin master 
+         git status
+  
+    
+
+ 
