@@ -1,0 +1,14 @@
+    .table {
+	  padding: 10px 15px;
+      background: #a7b4bf;
+	  width: 300px; /* Ширина таблицы */
+    border: 3px solid Grey; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+    }
+	    .list1 {
+	  padding: 10px 15px;
+      background: #a7b4bf;
+	  width: 300px; /* Ширина таблицы */
+    border: 1px solid green; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+    }

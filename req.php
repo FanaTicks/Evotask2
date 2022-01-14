@@ -1,0 +1,37 @@
+<?php
+$datafile = 'data.txt';
+if(is_file($datafile))
+{
+    if($_SERVER['REQUEST_METHOD'] == 'POST')
+    {
+        if(! empty($_POST['login']) && ! empty($_POST['pass']))
+        {
+            if(preg_match('/^[A-zА-я0-9\s]+$/uis', $_POST['login']))
+            {
+                $login = $_POST['login'];
+                
+                $datalines = file($datafile);
+                $x = true;
+                foreach($datalines as $line)
+                {
+                    if(preg_match('/^' .$login. '/ius', $line))
+                    {	
+                        $x = false;
+                        break;
+                    }
+                }
+                if($x){
+                    file_put_contents($datafile, "$login"."|".$_POST['pass']."\n", FILE_APPEND);
+				echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>",'Привіт, '. $login;
+                echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+                else{
+                    echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>",'Вже бачилися, '. $login;
+                    echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+            } else
+                echo 'Могут быть только буквы, цифры и знаки подчеркивания и дефиса';
+        } else
+            echo 'Заполните все поля';
+    }
+} else
+    echo 'Файл данных отсутствует';
+?>
