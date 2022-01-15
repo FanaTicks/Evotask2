@@ -1,24 +1,21 @@
-name: Deployment
-on:
-  push: 
-       branches: [ master ]
-       
+on: push
+name: 🚀 Deploy website on push
 jobs:
- job_one:
-  name: Den
-  runs-on: ubuntu-latest
-  steps:
-  - name: server
-    uses: appleboy/ssh-action@master
-    with:
-       host: 	ftpupload.net
-       username: epiz_30815428
-       key: ${{ 79WS4MP3CXj26 }}
-       port: 21
-       script: |
-         cd website
-         git pull origin master 
-         git status
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: ftpupload.net
+        username: epiz_30815428
+        password: ${{ 79WS4MP3CXj26 }}
+        protocol: ftps
+        port: 21 # todo replace with your web hosts ftps port
   
     
 
