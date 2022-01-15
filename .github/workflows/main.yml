@@ -1,21 +1,19 @@
-name: Deployment
 on:
-  push: 
-       branches: [ master ]
-
+  push:
+    branches:
+      - main
+name: Production Deployment
 jobs:
- job_one:
-  name: Den
-  runs-on: ubuntu-latest
-  steps:
-  - name: server
-    uses: appleboy/ssh-action@master
-    with:
-       host:     ftpupload.net
-       username: epiz_30815428
-       key: ${{ PASSWORD }}
-       port: 21
-       script: |
-         cd website
-         git pull origin master 
-         git status
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ftpupload.net
+        username: epiz_30815428
+        password: ${{ secrets.PASSWORD }}
