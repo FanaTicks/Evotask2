@@ -27,11 +27,14 @@ if(is_file($datafile))
                 else{
                     echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>",'Вже бачилися, '. $login;
                     echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
-            } else
-                echo 'Могут быть только буквы, цифры и знаки подчеркивания и дефиса';
-        } else
-            echo 'Заполните все поля';
+            } else{
+			echo 'Могут быть только буквы, цифры и знаки подчеркивания и дефиса';
+			echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+        } else{
+		echo 'Заполните все поля';
+		echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
     }
-} else
+} else{
     echo 'Файл данных отсутствует';
+    echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
 ?>
