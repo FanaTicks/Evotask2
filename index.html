@@ -10,24 +10,8 @@
  <div id="header">
 <img class="top" src="img/top.png">
  </div>
- <div id="sidebar">
-  <table class="table">
-  <tr>
-  <form name = 'myform' action = 'req.php' method = 'post'>
-    <td>NAME:</td> <td><input type = 'text' name = 'login' /></td>
-    </tr>
-	<tr>
-    <td>SURNAME:</td> <td><input type = 'text' name = 'pass' /></td>
-    </tr>
-	<tr>
-    <td><input type = 'submit' value = 'Enter' /> </td>	
-  </form>
-  <form name = 'myform' action = 're.php' method = 'post'>
-  <td><input type = 'submit' value = 'List' />  </td>      
-  </form>
-  </tr>
-  </table>
-  </div>
+
+<div class="row">
    <div id="content">
     <h1>Сайт з веденям імені та прізвища</h1>
    <p>На сайті можна вести свої дані. Побачити людей, котрі входили</p>
@@ -47,6 +31,26 @@
  </ul>
  <p>Сайт розмістив на хостингу "infinityfree.net". За допомогою Git Action можу пушити файли одразу на Git і Infinityfree. Розумію, що краще було виконати роботу з БД, але я вирішив приділити більше часу Git Action та Docker, тому що не мав досвіду в цій справі. </p>
    </div>
+    <div id="side">
+  <table class="table">
+  <tr>
+  <form name = 'myform' action = 'req.php' method = 'post'>
+    <td>NAME:</td> <td><input type = 'text' name = 'login' /></td>
+    </tr>
+	<tr>
+    <td>SURNAME:</td> <td><input type = 'text' name = 'pass' /></td>
+    </tr>
+	<tr>
+    <td><input type = 'submit' value = 'Enter' /> </td>	
+  </form>
+  <form name = 'myform' action = 're.php' method = 'post'>
+  <td><input type = 'submit' value = 'List' />  </td>      
+  </form>
+  </tr>
+  </table>
+  <img class="cat" src="img/cat.jpg">
+  </div>
+  </div>
    <div class="clear"></div>
    <div id="footer">
       <p class="fon"><strong>Телефон:<br> 0962604456</strong> </p>

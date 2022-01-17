@@ -22,19 +22,19 @@ if(is_file($datafile))
                 }
                 if($x){
                     file_put_contents($datafile, "$login"."|".$_POST['pass']."\n", FILE_APPEND);
-				echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>",'Привіт, '. $login;
-                echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+				echo "<p style='padding: 10px 15px;background: ##FFFADD;width: 300px;border: 2px solid #E6E6E6;margin: left;'>",'Привіт, '. $login;
+                echo "<p style='padding: 10px 15px;background: ##FFFADD;width: 300px;border: 2px solid #E6E6E6;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
                 else{
-                    echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>",'Вже бачилися, '. $login;
-                    echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+                    echo "<p style='padding: 10px 15px;background: ##FFFADD;width: 300px;border: 2px solid #E6E6E6;margin: left;'>",'Вже бачилися, '. $login;
+                    echo "<p style='padding: 10px 15px;background: ##FFFADD;width: 300px;border: 2px solid #E6E6E6;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
             } else{
 			echo 'Могут быть только буквы, цифры и знаки подчеркивания и дефиса';
-			echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+			echo "<p style='padding: 10px 15px;background: ##FFFADD;width: 300px;border: 2px solid #E6E6E6;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
         } else{
 		echo 'Заполните все поля';
-		echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+		echo "<p style='padding: 10px 15px;background: ##FFFADD;width: 300px;border: 2px solid #E6E6E6;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
     }
 } else{
     echo 'Файл данных отсутствует';
-    echo "<p style='padding: 10px 15px;background: ##D3D3D3;width: 300px;border: 3px solid Grey;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
+    echo "<p style='padding: 10px 15px;background: ##FFFADD;width: 300px;border: 2px solid #E6E6E6;margin: left;'>","<a href=http://fanaticks.great-site.net>Назад</a>";}
 ?>
