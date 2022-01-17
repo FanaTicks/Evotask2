@@ -44,7 +44,7 @@ margin: 7px 0 7px 90px;}
 .table {
       background: #F5FAEA;
     border: 1px solid #CDD0C7; /* Рамка вокруг таблицы */
-	width: 40%; /* Ширина блока */
+	width: 10%; /* Ширина блока */
 	  border-radius: 5px; /* Закругляем углы блока */
   box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
   margin:auto;
@@ -96,5 +96,10 @@ margin: 7px 0 7px 90px;}
   float:left;
  margin:20px 0 0 60px;
 }
-
+.mark{  
+  float:right;
+    height:2%; /* Высота   */
+    width: 20%; /* Ширина  */
+ margin:20px 0 0 60px;
+}
 
