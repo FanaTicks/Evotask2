@@ -20,5 +20,8 @@
   ![image](https://user-images.githubusercontent.com/75033218/149922043-856fe909-6a1b-483c-9d8f-98ad56979630.png)
   * Репозиторій Docker: https://hub.docker.com/repository/docker/fanaticks/evo2022
   ![image](https://user-images.githubusercontent.com/75033218/149922092-249e7643-168c-4e15-b082-10f3225883e1.png)
+####  Додаткове: #### 
+  * Написаний Git Action(можу сказати, що обрав дуже поганий хостинг, бо немає можливості на пряму підключитись до GitHub, використовував FTP)
+  ![image](https://user-images.githubusercontent.com/75033218/149966760-9ca76d98-cd2f-4cbe-b917-35d133843ee5.png)
 
 
