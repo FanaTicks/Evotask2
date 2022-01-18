@@ -11,7 +11,7 @@
 ###  З плюсів виконав: ###
   * підключив хостинг
   ![Без имени-2](https://user-images.githubusercontent.com/75033218/149921265-3c617bcb-14a9-4f1c-aa45-b6d85ebb33e1.jpg)
-  * застосовав GitHub Actions(одразу пушить на Git та на зостинг)
+  * застосовав GitHub Actions(одразу пушить на Git та на хостинг)
   ![Без имени-2](https://user-images.githubusercontent.com/75033218/149921646-6c8c4402-e46e-4d83-9f96-964d1ad93212.png)
   * загорнув сайт у Docker
   ![1](https://user-images.githubusercontent.com/75033218/149921931-34278bc3-4246-4273-8e3e-3e522a97d750.png)
